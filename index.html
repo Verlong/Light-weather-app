@@ -8,19 +8,40 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Righteous&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  <link href="src/styles.css" rel="stylesheet" type="text/css">  <title>🔆Lite Weather App</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link href="src/styles.css" rel="stylesheet" type="text/css">  <title>🌍 Lite Weather App</title>
 </head>
 
 <body>
     <div class="container">
         
         <div class="weather-app-wrapper">
-            <h1>🔆Lite Weather App
+            <h1>🌍Lite Weather App
             </h1>
           <div class="weather-app">
+            <form id="search-form" class="mb-3">
+                <div class="row">
+                  <div class="col-9">
+                    <input
+                      type="search"
+                      placeholder="Type a city.."
+                      class="form-control"
+                      id="city-input"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="submit"
+                      value="Search"
+                      class="btn btn-secondary w-100"
+                    />
+                  </div>
+                </div>
+              </form>
             <div class="overview">
               <h1 id="city">Carlow</h1>
               <ul>
@@ -33,7 +54,7 @@
                 <div class="clearfix weather-temperature">
                   <img src="img/sun1.png" alt="Clear" id="icon" class="float-left" />
                   <div class="float-left">
-                    <strong id="temperature">28</strong
+                    <strong id="temperature">27</strong
                     ><span class="units"> °C | <a href="#">°F </a>
                         </span>
                   </div>
@@ -41,18 +62,21 @@
               </div>
               <div class="col-6">
                 <ul>
-                  <li>Humidity: <span id="humidity">75</span>%</li>
-                  <li>Wind: <span id="wind">4</span> m/h</li>
+                  <li>Humidity: <span id="humidity">67</span>%</li>
+                  <li>Wind speed: <span id="wind">4.6</span> m/h</li>
                   <li>Precipitation: <span id="precipitation">75</span>%</li>
                 </ul>
               </div>
             </div>
+            <iframe width="440" height="315" src="https://www.ventusky.com/?p=51.6;27.5;3&l=radar&t=20220711/22" title="YouTube video player" frameborder="0"  autoplay; " allowfullscreen></iframe>
+            
             <small>
                 Coded by Maryna Bonko
                 <a
                   href="https://github.com/Verlong/Light-weather-app"
                   target="_blank"
-                  >Source code</a>
+                  >Source code</a> <br />
+                  <a href="https://www.ventusky.com/">Video source</a>
                 
               </small>
           </div>

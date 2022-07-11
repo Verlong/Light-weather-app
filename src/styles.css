@@ -27,7 +27,7 @@
     text-transform: capitalize;
   }
   .weather-app-wrapper {
-    max-width: 700px;
+    max-width: 500px;
     margin: 40px auto;
     background-color: #F5E1DA transparent;
     ;
@@ -46,6 +46,15 @@
     height: 64px;
     width: 64px;
   }
+
+  .weather .btn {
+    background: #885df1;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 0;
+    border: none;
+    height: 50px;
+}
   .weather-temperature strong {
     color: #476268;
     font-size: 64px;
