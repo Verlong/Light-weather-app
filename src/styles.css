@@ -29,7 +29,7 @@
   .weather-app-wrapper {
     max-width: 500px;
     margin: 40px auto;
-    background-color: #F5E1DA transparent;
+    background: #F5E1DA transparent;
     ;
   }
   .weather-app {
