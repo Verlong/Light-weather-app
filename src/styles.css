@@ -68,7 +68,7 @@
   }
   .weather-temperature .active {
     color: #476268;
-    cursor: default;
+    cursor: pointer;
   }
   .weather-temperature .active:hover {
     text-decoration: none;
