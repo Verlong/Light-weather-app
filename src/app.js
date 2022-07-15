@@ -81,6 +81,7 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  let pressureElement = document.querySelector("#pressure");
 
   celsiusTemperature = response.data.main.temp;
 
@@ -88,6 +89,7 @@ function displayTemperature(response) {
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
+  pressureElement.innerHTML = response.data.main.pressure;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
