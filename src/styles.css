@@ -2,6 +2,7 @@
     font-family: Righteous;
     background:  url(../img/yellowtree.jpg);
   }
+  
   h1 {
     color: #476268;
     font-size: 24px;
@@ -10,10 +11,12 @@
     margin-bottom: 0;
     
   }
+
   ul {
     margin: 0;
     padding: 0;
   }
+
   li {
     list-style: none;
     margin: 0;
@@ -23,6 +26,7 @@
     font-weight: 100;
     line-height: 19px;
   }
+
   li:first-letter {
     text-transform: capitalize;
   }
@@ -30,13 +34,13 @@
     max-width: 500px;
     margin: 40px auto;
     background: #F5E1DA transparent;
-    ;
+    
   }
   .weather-app {
     padding: 30px;
     border: 2px solid #dadde1;
     border-radius: 15px;
-     }
+  }
 
   .overview {
     margin-bottom: 20px;
@@ -54,7 +58,7 @@
     padding: 15px 0;
     border: none;
     height: 50px;
-}
+  }
   .weather-temperature strong {
     color: #476268;
     font-size: 64px;
@@ -90,4 +94,5 @@
   }
   
   .weather-forecast-temperatures {
-    font-size: 13px;}
+    font-size: 13px;
+  }
